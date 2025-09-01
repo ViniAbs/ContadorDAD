@@ -32,7 +32,8 @@ btns.forEach(btn => {
         else if (styles.contains('reiniciar')) {
             count = 0
         }
-        else if (!styles.contains('speech')) {
+        
+        if (!styles.contains('speech')) {
             atualizarDisplay()
         }
 
