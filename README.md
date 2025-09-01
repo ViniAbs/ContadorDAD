@@ -10,6 +10,7 @@ Além disso, o contador possui um **robô falador** que anuncia o valor atual em
 * Aumentar, diminuir e resetar o contador manualmente (botões).
 * Controlar o contador por **comandos de voz** como *"mais"*, *"menos"*, *"resetar"*.
 * O contador fala em voz alta o número atualizado.
+* Botão de como utilizar o site.
 * Interface moderna com **responsividade** e **feedback visual** ao gravar.
 
 ---
@@ -26,9 +27,11 @@ Além disso, o contador possui um **robô falador** que anuncia o valor atual em
 ## 📂 Estrutura do Projeto
 
 ```
-contador-voz/
+contador/
 │
 ├── index.html        # Estrutura principal
+├── assets/
+|   └── icon.png      # Icone da página
 ├── css/
 │   └── style.css     # Estilos da aplicação
 ├── js/
@@ -40,7 +43,7 @@ contador-voz/
 
 ## ▶️ Como Rodar o Projeto
 
-Existem duas maneiras para ver o projeto, a 1ª é acessar o link logo abaixo e a 2ª seria seguir o passo a passo.
+Existem duas maneiras para rodar o projeto, a 1ª é acessar o link logo abaixo e a 2ª seria seguir o passo a passo.
 
 https://contadordad.onrender.com/
 
