@@ -40,6 +40,10 @@ contador-voz/
 
 ## ▶️ Como Rodar o Projeto
 
+Existem duas maneiras para ver o projeto, a 1ª é acessar o link logo abaixo e a 2ª seria seguir o passo a passo.
+
+https://contadordad.onrender.com/
+
 1. **Baixe ou clone o repositório**:
 
    ```bash
