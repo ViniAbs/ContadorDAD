@@ -1,4 +1,4 @@
-    # 🎤 Contador com Reconhecimento de Voz e Voz Sintetizada
+# 🎤 Contador com Reconhecimento de Voz e Voz Sintetizada
 
 Este projeto é um **contador interativo** feito em **HTML, CSS e JavaScript**, com suporte a **comandos de voz** para aumentar, diminuir ou reiniciar o contador.
 Além disso, o contador possui um **robô falador** que anuncia o valor atual em voz alta sempre que ele é atualizado.
@@ -39,6 +39,10 @@ contador-voz/
 ---
 
 ## ▶️ Como Rodar o Projeto
+
+Existem duas maneiras para ver o projeto, a 1ª é acessar o link logo abaixo e a 2ª seria seguir o passo a passo.
+
+https://contadordad.onrender.com/
 
 1. **Baixe ou clone o repositório**:
 
@@ -103,6 +107,6 @@ Isso garante que o usuário receba feedback **visual** e **auditivo**.
 
 ---
 
-## 💻 Desenvolvedor
+## 💻 Desenvolvedores
 
 Projeto desenvolvido por **Lucca Russo** e **Vinicius Abs**
