@@ -4,6 +4,10 @@ const value = document.querySelector('#value')
 const btns = document.querySelectorAll('.btn')
 const falar = document.querySelector('#falar')
 
+const modal = document.getElementById("tutorial");
+const btnAjuda = document.getElementById("ajuda");
+const closeBtn = document.querySelector(".close");
+
 const comandos = {
     aumentar: [
         "mais", "aumentar", "aumenta", "mais um",
@@ -19,6 +23,24 @@ const comandos = {
     ]
 }
 
+// Janela do tutorial
+
+btnAjuda.addEventListener("click", () => {
+    modal.style.display = "flex";
+});
+
+closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+});
+
+window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+});
+
+// Lógica dos botões
+
 btns.forEach(btn => {
     btn.addEventListener('click', (e) => {
         const styles = e.currentTarget.classList
@@ -32,7 +54,7 @@ btns.forEach(btn => {
         else if (styles.contains('reiniciar')) {
             count = 0
         }
-        
+
         if (!styles.contains('speech')) {
             atualizarDisplay()
         }
@@ -56,11 +78,15 @@ function atualizarDisplay() {
     falarNumero(count)
 }
 
+// Robô falador
+
 function falarNumero(texto) {
     const utterance = new SpeechSynthesisUtterance(texto)
     utterance.lang = "pt-BR"
     speechSynthesis.speak(utterance)
 }
+
+// Reconhecimento de voz
 
 falar.addEventListener('click', reconhecer)
 

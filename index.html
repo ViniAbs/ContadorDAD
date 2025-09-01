@@ -4,15 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <title>Contador</title>
+  <link rel="icon" type="image/png" href="assets/icon.png">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/png" href="https://contadordad.onrender.com/assets/icon.png">
 </head>
 
 <body>
   <main>
+
+    <!-- Container do Contador -->
     <div class="container">
       <h1 class="title">Contador</h1>
       <span id="value" class="counter">0</span>
+      <!-- Container dos Botões -->
       <div class="button-container">
         <button class="btn aumentar">Aumentar</button>
         <button class="btn diminuir">Diminuir</button>
@@ -20,8 +25,22 @@
       </div>
       <button id="falar" class="btn speech">Falar 🎤</button>
     </div>
+    <button class="ajuda" id="ajuda">Ajuda ❓</button>
   </main>
 
+  <!-- Janela do Tutorial -->
+  <div id="tutorial" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>📘 Como usar o site</h2>
+      <p>Clique em <b>Aumentar</b> para somar +1 ao contador.</p>
+      <p>Clique em <b>Diminuir</b> para subtrair -1 do contador.</p>
+      <p>Clique em <b>Reiniciar</b> para zerar o contador.</p>
+      <p>Clique em <b>Falar 🎤</b> para usar comandos de voz (ex: "aumentar", "diminuir").</p>
+    </div>
+  </div>
+
+  <!-- Arquivo JavaScript -->
   <script src="js/script.js"></script>
 </body>
 
